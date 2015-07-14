@@ -1,0 +1,78 @@
+body {
+  font-family: 'CursiveSansOblique', 'LiHei Pro', '微軟正黑體', 'Microsoft JhengHei', sans-serif;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+a, a:link, a:hover {
+  color: #FFF; 
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  text-shadow: 0px 0px 10px #EFEFEF;
+}
+.font-en {
+  font-weight: normal; 
+  font-style: italic; 
+}
+
+.center {
+  position:absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+.qblock {
+  background: url(images/Qblock.png) no-repeat 50% 220px;
+  background-image: -webkit-image-set( url(images/Qblock.png) 1x, url(images/Qblock@2x.png) 2x);
+}
+a.button.yes, a.button.no {
+  display: block;
+  position: absolute;
+  text-indent: -99999px;
+  width: 164px;
+  height: 164px;
+}
+a.button.yes {
+  background: url(images/yes.png) no-repeat 0 0;
+  background-image: -webkit-image-set( url(images/yes.png) 1x, url(images/yes@2x.png) 2x);
+  right: 50%;
+  margin-right: 200px;
+  top: 260px;
+}
+a.button.no {
+  background: url(images/no.png) no-repeat 0 0;
+  background-image: -webkit-image-set( url(images/no.png) 1x, url(images/no@2x.png) 2x);
+  left: 50%;
+  margin-left: 200px;
+  top: 260px;
+}
+
+
+section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.q0 {
+  background: url(images/index-img.png) no-repeat 50% 60px;
+  background-image: -webkit-image-set( url(images/index-img.png) 1x, url(images/index-img@2x.png) 2x);
+}
+.q0-1 {
+  top: 170px;
+  font-size: 24px;
+}
+.q0-2 {
+  top: 430px;
+  color: #FFF;
+  font-size: 40px;
+}
+
+.q1-1 {
+  top: 300px;
+  font-size: 25px;
+}
