@@ -29,6 +29,10 @@ a:hover {
   background: url(images/Qblock.png) no-repeat 50% 220px;
   background-image: -webkit-image-set( url(images/Qblock.png) 1x, url(images/Qblock@2x.png) 2x);
 }
+.qtext {
+  top: 300px;
+  font-size: 25px;
+}
 a.button.yes, a.button.no {
   display: block;
   position: absolute;
@@ -73,6 +77,4 @@ section {
 }
 
 .q1-1 {
-  top: 300px;
-  font-size: 25px;
 }
