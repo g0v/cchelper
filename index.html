@@ -9,6 +9,8 @@
     <!--Import jQuery and Smooth Scoll Function-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script src="lib/jquery.scrollTo.js"></script>
+    <script src="lib/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/sweetalert.css">
 
 </head>
 
@@ -33,29 +35,44 @@
         <div class="q1-n-1 center qtext">
             <p>是否要標示姓名？</p>
         </div>
-        <a class="button yes" data="q1-n-y">yes</a>
-        <a class="button no" data="q1-n-n">no</a>
+        <a class="button yes" data="q1-n-y" 
+           onclick="swal({title: '<a href=http://creativecommons.org/licenses/by/4.0/deed.zh_TW target=_blank>姓名標示</a>', imageUrl: 'images/by.png', imageSize:'403x142', html: true})">
+            yes
+        </a>
+        <a class="button no" data="q1-n-n" 
+           onclick="swal({title: '<a href=http://creativecommons.org/publicdomain/zero/1.0/deed.zh_TW target=_blank>公眾領域</a>',imageUrl: 'images/cc-zero.png', imageSize:'403x142', html: true})">
+            no
+        </a>
     </section>
     <section id="q1-y" class="q1-y qblock">
         <div class="q1-y-1 center qtext">
             <p>是否可轉貼分享？</p>
         </div>
         <a class="button yes" data="q1-y-y" onclick="$.scrollTo('#q1-y-y',700);">yes</a>
-        <a class="button no" data="q1-y-n">no</a>
+        <a class="button no" data="q1-y-n" onclick="swal({title: '不授權!!!'})">no</a>
     </section>
     <section id="q1-y-y" class="q1-y-y qblock">
         <div class="q1-y-y-1 center qtext">
             <p>別人想修改，要不要先問過你？</p>
         </div>
         <a class="button yes" data="q1-y-y-y" onclick="$.scrollTo('#q1-y-y-y',700);">yes</a>
-        <a class="button no" data="q1-y-y-n">no</a>
+        <a class="button no" data="q1-y-y-n" 
+           onclick="swal({title: '<a href=http://creativecommons.org/licenses/by-nd/4.0/deed.zh_TW target=_blank>姓名標示-禁止改作</a>',imageUrl: 'images/by-nd.png', imageSize:'403x142', html: true})">
+            no
+        </a>
     </section>
     <section id="q1-y-y-y" class="q1-y-y-y qblock">
         <div class="q1-y-y-y-1 center qtext">
             <p>其他人可以拿你的作品去賺錢嗎？</p>
         </div>
-        <a class="button yes" data="q1-y-y-y-y">yes</a>
-        <a class="button no" data="q1-y-y-y-n">no</a>
+        <a class="button yes" data="q1-y-y-y-y" 
+           onclick="swal({title: '<a href=http://creativecommons.org/licenses/by-nd/4.0/deed.zh_TW target=_blank>姓名標示-相同方式分享</a>',imageUrl: 'images/by-sa.png', imageSize:'403x142', html: true})">
+            yes
+        </a>
+        <a class="button no" data="q1-y-y-y-n" 
+           onclick="swal({title: '<a href=http://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW target=_blank>姓名標示-非商業性-相同方式分享</a>',imageUrl: 'images/by-nc-sa.png', imageSize:'403x142', html: true})">
+            no
+        </a>
     </section>
 </body>
 
