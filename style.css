@@ -6,13 +6,17 @@ body {
 }
 
 a, a:link, a:hover {
-  color: #FFF; 
   text-decoration: none;
   cursor: pointer;
 }
 a:hover {
   text-shadow: 0px 0px 10px #EFEFEF;
 }
+
+.button {
+  color: #FFF; 
+}
+
 .font-en {
   font-weight: normal; 
   font-style: italic; 
