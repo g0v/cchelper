@@ -6,6 +6,10 @@
     <title>CC授權小幫手</title>
     <link rel="stylesheet" type="text/css" media="screen" href="http://openfontlibrary.org/face/cursive" />
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Import jQuery and Smooth Scoll Function-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="lib/jquery.scrollTo.js"></script>
+
 </head>
 
 <body>
@@ -15,15 +19,15 @@
             <p class="font-en">It's better when it's shared</p>
         </div>
         <div class="q0-2 center">
-            <p class="font-en"><a class="button" data="q1" href="#q1">Start</a></p>
+            <p class="font-en"><a class="button" data="q1" onclick="$.scrollTo('#q1',700);">Start</a></p>
         </div>
     </section>
     <section id="q1" class="q1 qblock">
         <div class="q1-1 center qtext">
             <p>是否很在意要保護自己的著作權？</p>
         </div>
-        <a class="button yes" data="q1-y" href="#q1-y">yes</a>
-        <a class="button no" data="q1-n" herf="#q1-n">no</a>
+        <a class="button yes" data="q1-y" onclick="$.scrollTo('#q1-y',700);">yes</a>
+        <a class="button no" data="q1-n" onclick="$.scrollTo('#q1-n',700);">no</a>
     </section>
     <section id="q1-n" class="q1-n qblock">
         <div class="q1-n-1 center qtext">
@@ -36,14 +40,14 @@
         <div class="q1-y-1 center qtext">
             <p>是否可轉貼分享？</p>
         </div>
-        <a class="button yes" data="q1-y-y" href="#q1-y-y">yes</a>
+        <a class="button yes" data="q1-y-y" onclick="$.scrollTo('#q1-y-y',700);">yes</a>
         <a class="button no" data="q1-y-n">no</a>
     </section>
     <section id="q1-y-y" class="q1-y-y qblock">
         <div class="q1-y-y-1 center qtext">
             <p>別人想修改，要不要先問過你？</p>
         </div>
-        <a class="button yes" data="q1-y-y-y" href="#q1-y-y-y">yes</a>
+        <a class="button yes" data="q1-y-y-y" onclick="$.scrollTo('#q1-y-y-y',700);">yes</a>
         <a class="button no" data="q1-y-y-n">no</a>
     </section>
     <section id="q1-y-y-y" class="q1-y-y-y qblock">
