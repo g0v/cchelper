@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
+<meta charset="UTF-8">
 
 <head>
     <meta charset="utf-8">
     <title>CC授權小幫手</title>
     <link rel="stylesheet" type="text/css" media="screen" href="http://openfontlibrary.org/face/cursive" />
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!--Import jQuery and Smooth Scoll Function-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script src="lib/jquery.scrollTo.js"></script>
-
 </head>
 
 <body>
@@ -19,43 +18,101 @@
             <p class="font-en">It's better when it's shared</p>
         </div>
         <div class="q0-2 center">
-            <p class="font-en"><a class="button" data="q1" onclick="$.scrollTo('#q1',700);">Start</a></p>
+            <p class="font-en"><a class="button" data="q1" onclick="$.scrollTo('#q1', 700);">Start</a></p>
         </div>
     </section>
     <section id="q1" class="q1 qblock">
         <div class="q1-1 center qtext">
             <p>是否很在意要保護自己的著作權？</p>
         </div>
-        <a class="button yes" data="q1-y" onclick="$.scrollTo('#q1-y',700);">yes</a>
-        <a class="button no" data="q1-n" onclick="$.scrollTo('#q1-n',700);">no</a>
+        <a class="button yes" data="q1-y" onclick="$.scrollTo('#q1-y', 700);">yes</a>
+        <a class="button no" data="q1-n" onclick="$.scrollTo('#q1-n', 700);">no</a>
     </section>
     <section id="q1-n" class="q1-n qblock">
         <div class="q1-n-1 center qtext">
             <p>是否要標示姓名？</p>
         </div>
-        <a class="button yes" data="q1-n-y">yes</a>
-        <a class="button no" data="q1-n-n">no</a>
+        <a class="button yes" data="q1-n-y" onclick="$.scrollTo('#q1-n-y', 700);">yes</a>
+        <a class="button no" data="q1-n-n" onclick="$.scrollTo('#q1-n-n', 700);">no</a>
     </section>
     <section id="q1-y" class="q1-y qblock">
         <div class="q1-y-1 center qtext">
             <p>是否可轉貼分享？</p>
         </div>
-        <a class="button yes" data="q1-y-y" onclick="$.scrollTo('#q1-y-y',700);">yes</a>
-        <a class="button no" data="q1-y-n">no</a>
+        <a class="button yes" data="q1-y-y" onclick="$.scrollTo('#q1-y-y', 700);">yes</a>
+        <a class="button no" data="q1-y-n" onclick="$.scrollTo('#q1-y-n', 700);">no</a>
     </section>
     <section id="q1-y-y" class="q1-y-y qblock">
         <div class="q1-y-y-1 center qtext">
-            <p>別人想修改，要不要先問過你？</p>
+            <p>是否讓別人可修改你的作品？</p>
         </div>
-        <a class="button yes" data="q1-y-y-y" onclick="$.scrollTo('#q1-y-y-y',700);">yes</a>
-        <a class="button no" data="q1-y-y-n">no</a>
+        <a class="button yes" data="q1-y-y-y" onclick="$.scrollTo('#q1-y-y-y', 700);">yes</a>
+        <a class="button no" data="q1-y-y-n" onclick="$.scrollTo('#q1-y-y-n', 700);">no</a>
     </section>
     <section id="q1-y-y-y" class="q1-y-y-y qblock">
         <div class="q1-y-y-y-1 center qtext">
             <p>其他人可以拿你的作品去賺錢嗎？</p>
         </div>
-        <a class="button yes" data="q1-y-y-y-y">yes</a>
-        <a class="button no" data="q1-y-y-y-n">no</a>
+        <a class="button yes" data="q1-y-y-y-y" onclick="$.scrollTo('#q1-y-y-y-y', 700);">yes</a>
+        <a class="button no" data="q1-y-y-y-n" onclick="$.scrollTo('#q1-y-y-y-n', 700);">no</a>
+    </section>
+<!--結果-->
+    <section id="q1-n-y" class="q0">
+        <div class="q0-1 center">
+            <p>您選擇：不在意著作權，但使用你作品的使用者<br />需要標示原作姓名</p>
+            <p><span style="color:white; background-color:#ED227A; border-radius:4px; font-weight:700;"> CC BY </span>是建議的選擇</p>
+        </div>
+        <div class="q0-2 center">
+            <p class="font-en"><a class="button" data="q1" onclick="$.scrollTo('#end', 700);">Next</a></p>
+        </div>
+    </section>
+    <section id="q1-n-n" class="q0">
+        <div class="q0-1 center">
+            <p>您選擇：不在意著作權，使用你作品的使用者<br />不需要標示原作姓名</p>
+            <p><span style="color:white; background-color:#ED227A; border-radius:4px; font-weight:700;"> CC0 </span>是建議的選擇</p>
+        </div>
+        <div class="q0-2 center">
+            <p class="font-en"><a class="button" data="q1" onclick="$.scrollTo('#end', 700);">Next</a></p>
+        </div>
+    </section>
+    <section id="q1-y-n" class="q0">
+        <div class="q0-1 center">
+            <p>您選擇：在意著作權，使用你作品的使用者<br />不可分享你的作品</p>
+            <p>這個作品屬於你自己專有的，因此不使用開放授權</p>
+        </div>
+        <div class="q0-2 center">
+            <p class="font-en"><a class="button" data="q1" onclick="$.scrollTo('#end', 700);">Next</a></p>
+        </div>
+    </section>
+    <section id="q1-y-y-n" class="q0">
+        <div class="q0-1 center">
+            <p>您選擇：在意著作權，使用你作品的使用者<br />可分享你的作品，但分享者不可修改你的作品</p>
+            <p><span style="color:white; background-color:#888888; border-radius:4px; font-weight:700;"> CC BY ND </span>是建議的選擇</p>
+        </div>
+        <div class="q0-2 center">
+            <p class="font-en"><a class="button" data="q1" onclick="$.scrollTo('#end', 700);">Next</a></p>
+        </div>
+    </section>
+    <section id="q1-y-y-y-y" class="q0">
+        <div class="q0-1 center">
+            <p>您選擇：在意著作權，使用你作品的使用者<br />可分享、修改，並且把你的作品拿去賺錢</p>
+            <p><span style="color:white; background-color:#ED227A; border-radius:4px; font-weight:700;"> CC BY SA </span>是建議的選擇</p>
+        </div>
+        <div class="q0-2 center">
+            <p class="font-en"><a class="button" data="q1" onclick="$.scrollTo('#end', 700);">Next</a></p>
+        </div>
+    </section>
+    <section id="q1-y-y-y-n" class="q0">
+        <div class="q0-1 center">
+            <p>您選擇：在意著作權，使用你作品的使用者<br />可分享、修改，但是不能把你的作品拿去賺錢</p>
+            <p><span style="color:white; background-color:#888888; border-radius:4px; font-weight:700;"> CC BY NC-SA </span>是建議的選擇</p>
+        </div>
+        <div class="q0-2 center">
+            <p class="font-en"><a class="button" data="q1" onclick="$.scrollTo('#end', 700);">Next</a></p>
+        </div>
+    </section>
+<!--最後-->
+    <section id="end" class="end">
     </section>
 </body>
 
