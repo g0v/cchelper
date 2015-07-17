@@ -83,3 +83,17 @@ section {
   background: url(images/Thank_you.png) no-repeat 50% 60px;
   background-image: -webkit-image-set( url(images/Thank_you.png) 1x, url(images/Thank_you@2x.png) 2x);
 }
+
+#goTop {
+  position: fixed;
+  bottom: 13px; /* 與下方的距離, 也可改為百分比, 即為距離螢幕下方的百分比 */
+  right: 13px; /* 與右方的距離 */
+  width: 45px; /* 按鈕原始寬度 */
+  height: 45px; /* 按鈕原始高度 */
+  opacity: 0.4; /* 按鈕原始透明度 */
+  z-index: 10;
+  cursor: pointer;
+  }
+  #goTop:hover { /* 滑鼠經過按鈕時 */
+  opacity: 1; /* 透明度 */
+}
