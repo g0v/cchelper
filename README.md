@@ -1,6 +1,5 @@
 #CC授權小幫手 CCHelper
->g0v Open Source Community License Helper
-# 
+> g0v Open Source Community License Helper
 ## Feature
 Easily get a CC License recommendation for your creation step by step.
 
